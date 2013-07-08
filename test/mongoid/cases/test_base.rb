@@ -1,7 +1,7 @@
 require 'mongoid/cases/helper'
 
 class ClientSideValidations::MongoidTestBase < Test::Unit::TestCase
-  include Mongoid::Validations
+  include Mongoid::Validatable
 
   def setup
     @book = Book.new
